@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>portfolio_site</title>
+  <link rel="stylesheet" href="ress.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a8f29fcd60.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="page-header wrapper">
+      <h1>Tommy's Portfolio Site</h1>
+      
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section id="fv" class="big-bg">
+      <div class="fv-contents wrapper">
+        <h2 class="main-copy">Tommy's Portfolio Site</h2>
+        <!--<p class="main-text">texttexttexttexttexttexttexttexttexttext</p>-->
+        <span class="button" href="#">お問い合わせ</span>
+      </div>
+    </section>
+
+    <section id="about" class="wrapper">
+      <h3 class="copy">About</h3>
+      <p class="copy-text">はじめまして！<br>
+        沖縄出身<br>
+        駆け出しエンジニアのTommyです。<br>
+        </p>
+      <div class="about-contents">
+        <img  class="about-contents__img" src="about.jpg" alt="プロフィール画像">
+              
+        <div class="about-contents__details">
+          <div class="sub-copy">
+            <h4>目標</h4>
+            <p>見やすく、伝わりやすいサイト作り</p>
+          </div>
+          
+          <div class="sub-copy">
+            <h4>学習期間</h4>
+            <p>eb制作の学習を2021年4月から継続中</p>
+          </div>
+
+          <div class="sub-copy">
+            <h4>好きなもの</h4>
+            <p>映画鑑賞、コーヒー</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="works" class="wrapper">
+      <h3 class="copy">Works</h3>
+      <p class="copy-text">私の作品</p>
+
+      <div class="grid">
+        <div class="item">
+          <a href="#"><img src="work1.png" alt="work1"></a>
+          <p>デイトラのサイトを模写を行いました。</p>
+        </div>
+        
+        <div class="item">
+          <a href="#"><img src="work2.png" alt="work2"></a>
+          <p>クリ★スタのデザインカンプから模写を行いました。</p>
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="work3.png" alt="work3"></a>
+          <p>だんさん(@dan03301)作成のサイトを模写致しました。</p>
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="work4.png" alt="work4"></a>
+          <p>勉強内容のアウトプッットとして、自分で作成してみたHPです。</p>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <section id="service" class="wrapper">
+    <h3 class="copy">Service</h3>
+    <p class="copy-text">サービス内容</p>
+
+    <div class="grid-service">
+      <div class="item-service">
+        <h4>コーディング</h4>
+        <p>お客様からお預かりしたデザインを基に丁寧にコーディング致します。</p>
+      </div>
+      
+      <div class="item-service">
+        <h4>レスポンシブル化</h4>
+        <p>お客様のサイトを各デバイスに合わせレスポンシブル化致します。</p>
+      </div>
+
+      <div class="item-service">
+        <h4>Webサイト制作</h4>
+        <p>お客様の「想い」がより多くの方に伝わるよう心掛け制作致します。</p>
+      </div>
+
+    </div>    
+
+  </section>
+
+  <section id="skills" class="big-bg">
+    <h3 class="copy">My Skills</h3>
+
+    <div class="wrapper">
+      
+      <div class="grid-skill">
+        <div class="item-skill">
+          <i class="fa-brands fa-html5 fa-10x fa-fw"></i>
+          <p>HTML</p>
+        </div>
+        
+        <div class="item-skill">
+          <i class="fa-brands fa-css3-alt fa-10x fa-fw"></i>
+          <p>CSS</p>
+        </div>
+        
+        <div class="item-skill">
+          <i class="fa-brands fa-php fa-10x fa-fw"></i>
+          <p>PHP</p>
+        </div>
+
+        <div class="item-skill">
+          <i class="fa-brands fa-js fa-10x fa-fw"></i>
+          <p>JavaScript</p>
+        </div>
+
+      </div>
+  
+    </div>
+
+   
+  </section>
+
+
+  <section id="contact" class="wrapper">
+    <h3 class="copy">Contact</h3>
+    <p class="copy-text">お問い合わせ</p>
+    <form action="#">
+      <div>
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="your-name">
+       </div>
+    
+      <div>
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="your-email">
+      </div>
+    
+      <div>
+        <label for="message">メッセージ</label>
+        <textarea id="message"  name="your-message"></textarea>
+      </div>
+    
+      <div>
+        <input type="submit" class="button" value="送信">
+      </div>
+
+    </form>
+  </section>
+
+
+  <footer>
+    <div class="wrapper">
+      <p><small>&copy; 2022 Tommy </small></p>
+    </div>
+  </footer>
+</body>
+</html>
