@@ -53,6 +53,10 @@ img {
   justify-content: space-between;
 }
 
+.page-header h1 {
+  font-size: 2rem;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -67,6 +71,44 @@ img {
 .main-nav li a {
   color: #000;
 }
+
+
+/* ---------- hamburger-btn ---------- */
+
+.hamburger-btn {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  transition: all .4s;
+  border: none;
+  outline: none;
+  background: transparent;
+  display: none;
+}
+
+.hamburger-btn span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  border-radius: 4px;
+}
+
+.hamburger-btn span:nth-of-type(1) {
+  top:0;
+}
+
+.hamburger-btn span:nth-of-type(2) {
+  top:15px;
+}
+
+.hamburger-btn span:nth-of-type(3) {
+  bottom:0;
+}
+
 
 
 /* ---------- fv ---------- */
@@ -156,8 +198,17 @@ img {
 
 .item-service {
   border: 1px solid gray;
+  padding: 5%;
+  text-align: center;
 }
 
+.item-service i {
+  margin-bottom: 10%;
+}
+
+.item-service h4 {
+  margin-bottom: 3%;
+}
 
 /* ---------- My Skills ---------- */
 #skills h3 {
@@ -233,12 +284,102 @@ footer {
 
 /* ---------- モバイル版 ---------- */
 @media (max-width: 900px) {
+
+  .page-header h1 {
+    font-size: 1rem;
+    padding-top: 3%;
+  }
+
+  .main-copy {
+    font-size: 3rem;
+  }
   
+  .copy {
+    font-size: 2.5rem;
+    margin-top: 20%;
+  }
+  
+  .grid {
+    gap: 46px;
+  }
+
 
 }
 
 
 @media (max-width: 600px) {
 
+  .about-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .about-contents__img {
+    width: 100%;
+  }
+
+  .sub-copy h4 {
+    font-size: 1.3rem;
+  }
+
+
+/* ---------- hamburger-btn ---------- */
+
+  .hamburger-btn {
+    display: block;
+  }
+  
+  nav {
+    position: fixed;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    transition: all .8s;
+    transform: translateX(100%);
+  }
+  
+  .main-nav {
+   width: 100%;
+   display: block; 
+   height: calc(100vh - 100px);
+   background-color: #000000;
+   opacity: 0.7;
+  }
+  
+  .main-nav li {
+    margin-right: 0;
+    border-bottom: solid 1px #333;
+    width: 100%;
+    height: calc((100vh - 100px) / 4);
+  }
+  
+  
+  .main-nav li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .hamburger-btn.active span:nth-of-type(1) {
+    -webkit-transform: translateY(14px) rotate(-45deg);
+    transform: translateY(14px) rotate(-45deg);
+  }
+  
+  .hamburger-btn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-btn.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-14px) rotate(45deg);
+    transform: translateY(-14px) rotate(45deg);
+  }
+  
+  nav.active {
+    transform: translateX(0);
+  }
 
 }
